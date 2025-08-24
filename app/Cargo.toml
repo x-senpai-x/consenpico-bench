@@ -1,0 +1,20 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2024"
+
+
+[dependencies]
+# Risc0 dependencies
+pico-sdk = { workspace = true }
+bincode = "1.3.3"
+
+# Ream dependencies
+ethereum_ssz = {workspace = true}
+ream-consensus = {workspace=true}
+ream-lib = { path = "../lib" }
+tree_hash = { workspace = true }
+tree_hash_derive = { workspace = true }
+ethereum_hashing = { workspace = true }
+sha2 = { workspace = true }
+ssz_types = { workspace = true }

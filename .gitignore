@@ -1,0 +1,15 @@
+.DS_Store
+target/
+.vscode/
+.idea
+
+# EF test data
+prover/mainnet/
+
+# Logs and Summaries
+prover/logs/
+prover/summaries/
+benchmarks/
+LICENSE
+
+.DS_Store

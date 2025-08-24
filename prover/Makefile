@@ -17,8 +17,8 @@ RUST_BACKTRACE = 0
 .PHONY: all download run clean $(addprefix run-, $(OPERATIONS)) $(addprefix run-, $(EPOCH_OPERATIONS)) $(addprefix run-, $(SLOT_OPERATIONS)) epoch-all slot-all
 
 # run-execution_payload (not implemented) and run-withdrawals (incompatible with BeaconState workaround) are excluded
-# all: download run-attestation run-attester_slashing run-block_header run-bls_to_execution_change run-deposit run-proposer_slashing run-sync_aggregate run-voluntary_exit
-all: run-attester_slashing run-block_header run-bls_to_execution_change run-deposit run-proposer_slashing run-sync_aggregate run-voluntary_exit
+all: download run-attestation run-attester_slashing run-block_header run-bls_to_execution_change run-deposit run-proposer_slashing run-sync_aggregate run-voluntary_exit
+# all: run-attester_slashing run-block_header run-bls_to_execution_change run-deposit run-proposer_slashing run-sync_aggregate run-voluntary_exit
 
 # Run all epoch processing benchmarks
 epoch-all: $(addprefix run-, $(EPOCH_OPERATIONS))
